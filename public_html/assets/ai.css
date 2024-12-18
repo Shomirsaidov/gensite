@@ -1,0 +1,213 @@
+   /* Container that holds the whole chat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fafc; /* Gray background */
+    height: 100vh;
+    padding: 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.w-full {
+    width: 100%;
+}
+
+/* Chat box with flex and padding */
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 94%;
+    width: 100%;
+    max-width: 600px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    gap: 16px;
+}
+
+/* Message container with scroll */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* User info section */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Avatar image styling */
+.avatar {
+    border-radius: 50%;
+    border: 2px solid #e2e8f0;
+}
+
+/* Status info for the user */
+.status-info {
+    text-align: center;
+}
+
+/* Username styling */
+.username {
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+/* Status color for online */
+.status {
+    color: #38a169; /* Green color */
+}
+
+
+/* Input container with space for buttons */
+.input-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Input field styling */
+.input-field {
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    outline: none;
+    border-radius: 9999px;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+/* Send button styling */
+.send-btn {
+    background-color: #474787;
+    border-radius: 9999px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Speech button styling */
+.speech-btn {
+    background-color: #474787;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+}
+
+/* Loading indicator */
+.loading-indicator {
+    display: none;
+    justify-content: flex-end;
+}
+
+/* Loader animation */
+.loader {
+    border: 4px solid #e2e8f0;
+    border-top: 4px solid #4c51bf;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.custom-scroll-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.custom-scroll-container::-webkit-scrollbar-track {
+  background: #e2e2e2;
+  border-radius: 120px;
+}
+
+/* Handle */
+.custom-scroll-container::-webkit-scrollbar-thumb {
+  background: #474787;
+  border-radius: 120px;
+}
+
+/* Handle on hover */
+.custom-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: rebeccapurple;
+}
+
+/* Simple loading indicator (spinner) */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 8px solid #474787;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.message-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 12px;
+    width: 75%; /* Equivalent to w-3/4 */
+}
+
+/* Message text styling */
+.message-text {
+    padding: 8px;
+    background-color: #4c51bf; /* Indigo background */
+    color: white;
+    border-radius: 1rem; /* Equivalent to rounded-xl */
+}
+
+/* Avatar styling */
+.avatar {
+    border-radius: 50%;
+    border: 2px solid #e2e8f0;
+}
+
+.bot-message {
+    padding: 8px;
+    background-color: #edf2f7; /* Equivalent to bg-gray-200 */
+    border-radius: 1rem; /* Equivalent to rounded-xl */
+}
